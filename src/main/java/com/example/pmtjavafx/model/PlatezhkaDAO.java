@@ -1,0 +1,4 @@
+package com.example.pmtjavafx.model;
+
+public class PlatezhkaDAO {
+}
