@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.pmtjavafx.controller.NakladnayaCreateController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox AnchorPane.topAnchor="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.leftAnchor="10.0">
+
+        <Label>Номер</Label>
+        <TextArea prefRowCount="1" fx:id="number"/>
+
+        <Label>Дата</Label>
+        <DatePicker fx:id="date"/>
+
+        <Label>Пользователь</Label>
+        <TextArea prefRowCount="1" fx:id="user"/>
+
+        <Label>Цена</Label>
+        <TextArea prefRowCount="1" fx:id="price"/>
+
+        <Label>Валюта</Label>
+        <TextArea prefRowCount="1" fx:id="currency"/>
+
+        <Label>Курс валюты</Label>
+        <TextArea prefRowCount="1" fx:id="currencyRate"/>
+
+        <Label>Товар</Label>
+        <TextArea prefRowCount="1" fx:id="product"/>
+
+        <Label>Количество</Label>
+        <TextArea prefRowCount="1" fx:id="count"/>
+
+        <Button fx:id="createButton" onAction="#OnCreateButtonClick">Создать</Button>
+
+        <Label fx:id="errorLabel" visible="false">Ошибка! Заполнены не все поля</Label>
+
+    </VBox>
+</AnchorPane>

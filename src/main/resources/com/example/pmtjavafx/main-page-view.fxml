@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.pmtjavafx.controller.MainPageController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <ListView fx:id="LV_Documents" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="200.0" AnchorPane.bottomAnchor="13.0"/>
+
+    <VBox AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" spacing="34.0">
+        <Button prefWidth="150" onAction="#OnNakladnayaCreateButtonClick">Накладная</Button>
+        <Button prefWidth="150" onAction="#OnPlatezhkaCreateButtonClick">Платёжка</Button>
+        <Button prefWidth="150" onAction="#OnZayavkaCreateButtonClick">Заявка на оплату</Button>
+        <Button prefWidth="150" onAction="#OnSaveButtonClick">Сохранить</Button>
+        <Button prefWidth="150" onAction="#OnLoadButtonClick">Загрузить</Button>
+        <Button prefWidth="150" onAction="#OnLookButtonClick">Просмотр</Button>
+        <Button prefWidth="150" onAction="#OnDeleteButtonClick">Удалить</Button>
+        <Button fx:id="exitButton" prefWidth="150" onAction="#OnExitButtonClick">Выход</Button>
+    </VBox>
+
+</AnchorPane>
